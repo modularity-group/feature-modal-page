@@ -6,7 +6,7 @@ Lets you open any page or post in a modal window just with a link to `#modal-pag
 
 ---
 
-Version: 1.2.6
+Version: 1.2.7
 
 Author: Ben @ https://modularity.group
 
@@ -28,6 +28,8 @@ You can react to modal `open`, `close`, `confirm` with jQuery: `$('body').on('mo
 Let the user interact with the modal with this links targets: `#confirm` | `#close`
 
 ---
+
+1.2.7 | do_shortcode on modal page content
 
 1.2.6 | rename state classes and action names
 
