@@ -1,15 +1,5 @@
 <?php
 
-add_action('wp_ajax_feature_modal_page_get', function(){
-  feature_modal_page_get();
-  exit;
-});
-
-add_action('wp_ajax_nopriv_feature_modal_page_get', function(){
-  feature_modal_page_get();
-  exit;
-});
-
 function feature_modal_page_get() {
   if (isset($_POST['target'])) {
     $post = new WP_Query(array(
@@ -29,7 +19,12 @@ function feature_modal_page_get() {
         $post->the_post();
         $value = isset($_POST['value']) ? urldecode(html_entity_decode(strip_tags($_POST['value']))) : '';
         include_once "feature-modal-page.template.php";
+        exit;
       }
     }
   }
+  die("error");
 }
+
+add_action('wp_ajax_feature_modal_page_get', 'feature_modal_page_get');
+add_action('wp_ajax_nopriv_feature_modal_page_get', 'feature_modal_page_get');

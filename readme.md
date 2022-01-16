@@ -29,6 +29,8 @@ Let the user interact with the modal with this links targets: `#confirm` | `#clo
 
 ---
 
+1.2.8 | wip: fix hang-up on non-existing targets
+
 1.2.7 | do_shortcode on modal page content
 
 1.2.6 | rename state classes and action names
