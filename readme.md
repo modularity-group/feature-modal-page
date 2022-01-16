@@ -6,7 +6,7 @@ Lets you open any page or post in a modal window just with a link to `#modal-pag
 
 ---
 
-Version: 1.2.7
+Version: 1.2.8
 
 Author: Ben @ https://modularity.group
 
@@ -29,7 +29,7 @@ Let the user interact with the modal with this links targets: `#confirm` | `#clo
 
 ---
 
-1.2.8 | wip: fix hang-up on non-existing targets
+1.2.8 | fix hang-up on non-existing targets
 
 1.2.7 | do_shortcode on modal page content
 
