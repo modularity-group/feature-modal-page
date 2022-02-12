@@ -28,3 +28,10 @@ function feature_modal_page_get() {
 
 add_action('wp_ajax_feature_modal_page_get', 'feature_modal_page_get');
 add_action('wp_ajax_nopriv_feature_modal_page_get', 'feature_modal_page_get');
+
+add_action("template_redirect", function(){
+  if ($_SERVER['REQUEST_URI'] && substr($_SERVER['REQUEST_URI'], 0, 7) === '/modal-') {
+    wp_redirect(home_url());
+    exit;
+  }
+});
